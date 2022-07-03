@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.todolist {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+ul {
+  /* width: 100%; */
+  list-style: none;
+  /* height: 500px; */
+  /* background: red; */
+  color: white;
+}
+ol {
+  list-style-type: disc;
+  display: block;
+  font-size: large;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.mt {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container .brandlogo {
+  width: 20%;
+  height: 80px;
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.navbar-container .navbar {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-container .navbar li {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-container .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  transition: all 0.5s linear;
+}
+
+.navbar-container .navbar li a.active,
+.navbar-container .navbar li a:hover {
+  color: red;
+  transform: scale(1);
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  width: 80%;
+  /* margin-left: 300px; */
+}
+.todolist {
+  width: 40%;
+  height: 599px;
+  background: #000;
+  margin-top: 100px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.container {
+  width: 600px;
+  width: 40%;
+  height: 599px;
+  margin-top: 100px;
+  background: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 20px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.box {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  letter-spacing: 2px;
+}
+.box::placeholder {
+  color: violet;
+}
+#button {
+  margin: 1rem 5rem 5rem 5rem;
+  padding: 10px 10px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 20px;
+  border: none;
+}
+a#light,
+a.dark {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 100px;
+  right: 20px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.6s linear, color 0.5s ease-in-out;
+}
+a#light {
+  background: #000;
+}
+a#light:hover {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+a.dark,
+a#light:active {
+  box-shadow: 5px 5px 15px 10px rgba(255, 255, 255, 0.5);
+}
+.box:focus {
+  border: none;
+  outline: none;
+}
